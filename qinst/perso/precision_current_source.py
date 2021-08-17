@@ -83,14 +83,14 @@ class CurrentSource(Instrument):
 
         self.add_parameter('range_dc',
                            parameter_class=ManualParameter,
-                           initial_value=2,
+                           initial_value=10e-6,
                            label='DC range',
                            units='A/V',
                            vals=Enum(100e-6, 10e-6, 1e-6))
 
         self.add_parameter('range_ac',
                            parameter_class=ManualParameter,
-                           initial_value=1e-7,
+                           initial_value=10e-9,
                            label='AC range',
                            units='A/V',
                            vals=Enum(100e-9, 10e-9, 1e-9))
